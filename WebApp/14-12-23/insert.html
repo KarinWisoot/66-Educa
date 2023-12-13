@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Location</title>
+</head>
+<body>
+    <h1>Submit Location</h1>
+    <form action="/location" method="post">
+        <label for="location_name">Location Name:</label>
+        <input type="text" id="location_name" name="location_name" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <br>
+
+    <h1>Delete Locaation</h1>
+    <form action="/location" method="post"
+    onsubmit =" return confirm('Are you sure you want to delete this location?')">
+        <label for="location_id">Location ID:</label>
+        <input type="text" id="location_id" name="location_id" required>
+        <br>
+        <button type="submit">Delete</button>
+
+    </form>
+</body>
+</html>
